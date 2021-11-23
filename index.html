@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+<div class="container">
+    <header class="header">
+     
+       
+      <h1 id="title" class="text-center"><strong>Five star Consulting Survey </strong></h1>
+      
+      <h2 id="info" class="info text-center">
+        Please enter your information below
+      </h2>
+      
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Please enter your name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Please enter your Email"
+          required
+        />
+      </div>
+      
+      <div class="form-group">
+        <p>Which option best describes your current role?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select current role</option>
+          <option value="sysadmin">Sysadmin</option>
+          <option value="developer">Developer</option>
+          <option value="ceo">C level</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+  <div class="form-group">
+        <label id="number-label" for="number"
+          >How long have you been at current company?<span class="clue">(optional)</span></label
+        >
+        <input
+          type="number"
+          name="years"
+          id="number"
+          min="1"
+          max="99"
+          class="form-control"
+          placeholder="0"
+        />
+      </div>
+      <div class="form-group">
+        <p>Have you used 5 Star Consulting before?</p>
+        <label>
+          <input
+            name="user-recommend"
+            value="yes"
+            type="radio"
+            class="input-radio"
+            checked
+          />Yes</label
+        >
+        <label>
+          <input
+            name="user-recommend"
+            value="no"
+            type="radio"
+            class="input-radio"
+          />No</label
+        >
+  
+        <label
+          ><input
+            name="user-recommend"
+            value="not-sure"
+            type="radio"
+            class="input-radio"
+          />Not sure</label
+        >
+      </div>
+  
+      <div class="form-group">
+        <p>
+          Which of the follow Cloud models would like to get more information about?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Select an option</option>
+          <option value="private">Private</option>
+          <option value="public">Public</option>
+          <option value="hybrid">Hybrid Cloud</option>
+          <option value="multi">Multi Cloud</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>
+          Which projects does does your orgnization need to deliver this year?
+          <span class="clue">(Check all that apply)</span>
+        </p>
+  
+        <label
+          ><input
+            name="prefer"
+            value="dc-close"
+            type="checkbox"
+            class="input-checkbox"
+          />Datacenter Closure</label
+        >
+        <label>
+          <input
+            name="prefer"
+            value="network-refreash"
+            type="checkbox"
+            class="input-checkbox"
+          />Network refreash</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Virtulization"
+            type="checkbox"
+            class="input-checkbox"
+          />Virtulization</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="EUC or BYOD"
+            type="checkbox"
+            class="input-checkbox"
+          />EUC or BYOD</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="k8"
+            type="checkbox"
+            class="input-checkbox"
+          />App Modernization or Kubernetes</label
+        >
+        
+      </div>
+  
+      <div class="form-group">
+        <p>Other project not listed?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+    <p id="description" class="description text-center">
+      ShiroKuma2000
+    </p>
+  </div>
